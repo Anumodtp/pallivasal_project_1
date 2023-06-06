@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+  {% block head %}
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='CSS/index/style.css') }}"
+    />
+    <title>Transportation</title>
+    <link
+      rel="icon"
+      href="{{url_for('static',filename='images/logo.png')}}"
+      type="image/icon type"
+    />
+
+  <style>
+    h5 {
+      color: #ffffff;
+    }
+  </style>
+  {% endblock head %}
+
+  {% block body  %}
+    
+    <div class="container text-center" style="margin-top: 100px">
+      <div class="row-fluid">
+        <h1 style="font-family: verdana; color: white">Transportation</h1>
+      </div>
+      <div class="container2 text-center mt-5">
+        <div class="row mb-5">
+          <div class="col-lg">
+            <img
+              src="{{url_for('static',filename='images/jeep.png')}}"
+              alt=""
+            />
+            <h5>Jeep Safari</h5>
+          </div>
+          <div class="col-lg">
+            <img
+              src="{{url_for('static',filename='images/ksrtc.png')}}"
+              alt=""
+            />
+            <h5>Bus Services</h5>
+          </div>
+          <div class="col-lg">
+            <img
+              src="{{url_for('static',filename='images/taxi.png')}}"
+              alt=""
+            />
+            <h5>Taxi Services</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg">
+            <img
+              src="{{url_for('static',filename='images/innova.png')}}"
+              alt=""
+            />
+            <h5>Car Rental</h5>
+          </div>
+          <div class="col-lg">
+            <img
+              src="{{url_for('static',filename='images/scooter.png')}}"
+              alt=""
+            />
+            <h5>Bike Rental</h5>
+          </div>
+          <div class="col-lg">
+            <img
+              src="{{url_for('static',filename='images/auto.png')}}"
+              alt=""
+            />
+            <h5>Auto Rickshaw</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endblock body %}
